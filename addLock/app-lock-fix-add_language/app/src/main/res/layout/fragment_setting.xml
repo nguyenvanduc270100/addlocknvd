@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.SettingFragment">
+
+    <include
+        android:id="@+id/toolbarSetting"
+        layout="@layout/layout_toolbar_setting" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarSetting">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SettingFragment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- TODO: Update blank fragment layout -->
+        <FrameLayout
+            android:id="@+id/settingBase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintCircleRadius="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="#FFB63E"
+                app:cardCornerRadius="16dp">
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imgWhiteRectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="27.26dp"
+                android:layout_marginLeft="16dp"
+                app:srcCompat="@drawable/ic_white_rect"></ImageView>
+
+            <ImageView
+                android:id="@+id/imgCrownHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="27.26dp"
+                android:layout_marginLeft="38.5dp"
+                app:srcCompat="@drawable/ic_crown_head"></ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/settingSecure"
+                android:layout_width="match_parent"
+                android:layout_height="263dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="112dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                <TextView
+                    android:id="@+id/secureTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="255dp"
+                    android:fontFamily="Google Sans"
+                    android:text="Security"
+                    android:textFontWeight="500"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgViewQuickLock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="69.75dp"
+                    app:srcCompat="@drawable/ic_quick_lock"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="Google Sans"
+                    android:text="Quick Lock Switch"
+                    android:textColor="#444444"
+                    android:textFontWeight="400"
+                    android:textSize="14sp"></TextView>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="86dp"
+                    android:fontFamily="Google Sans"
+                    android:text="Not displayed in notification bar"
+                    android:textColor="#999999"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"></TextView>
+
+                <Switch
+                    android:id="@+id/switchSecure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="70.5dp"
+                    android:layout_marginRight="18dp"
+                    app:thumbTint="#328BE0"
+                    app:trackTint="#BDD0F4">
+
+                </Switch>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="117dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#E9E9E9" />
+
+
+                <RelativeLayout
+                    android:id="@+id/languageLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="115dp">
+
+                    <ImageView
+                        android:id="@+id/imgViewLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="26dp"
+                        app:srcCompat="@drawable/ic_language"></ImageView>
+
+                    <TextView
+                        android:id="@+id/titleLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="Google Sans"
+                        android:text="Choose your language"
+                        android:textColor="#444444"
+                        android:textFontWeight="400"
+                        android:textSize="14sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/spellingLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginTop="42dp"
+                        android:fontFamily="Google Sans"
+                        android:text="Change interface &amp; spelling language"
+                        android:textColor="#999999"
+                        android:textFontWeight="400"
+                        android:textSize="12sp"></TextView>
+
+                    <ImageView
+                        android:id="@+id/imgViewShowItem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="31dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="22dp"
+                        app:srcCompat="@drawable/ic_show_item">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#E9E9E9" />
+
+                <RelativeLayout
+                    android:id="@+id/shareUsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="190dp">
+
+                    <ImageView
+                        android:id="@+id/imgViewShareUs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="25.5dp"
+                        app:srcCompat="@drawable/ic_share_us"></ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewShareUs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="Google Sans"
+                        android:text="Share us"
+                        android:textColor="#444444"
+                        android:textFontWeight="400"
+                        android:textSize="14sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/textViewShareContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginTop="42dp"
+                        android:fontFamily="Google Sans"
+                        android:text="Share the app with your friends"
+                        android:textColor="#999999"
+                        android:textFontWeight="400"
+                        android:textSize="12sp"></TextView>
+
+                    <ImageView
+                        android:id="@+id/imgViewShowItem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginRight="22dp"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/ic_show_item"></ImageView>
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="391dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="#F7FAFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="Google Sans"
+                    android:text="Version 1.1"
+                    android:textColor="#3A6073"
+                    android:textFontWeight="400"
+                    android:textSize="16sp"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

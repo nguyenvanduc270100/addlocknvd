@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lgi.applock.layouts.SafeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/lock"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:text="@string/create_new_pin"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:sv_doneCircleColor="@color/white"
+        app:sv_doneCircleRadius="12dp"
+        app:sv_doneStepLineColor="@color/white"
+        app:sv_doneStepMarkColor="@color/bluePrimary"
+        app:sv_doneTextColor="@color/bluePrimary"
+        app:sv_nextStepCircleColor="#26FFFFFF"
+        app:sv_nextStepCircleEnabled="true"
+        app:sv_nextStepLineColor="#E9F2FC"
+        app:sv_nextTextColor="@color/white"
+        app:sv_selectedCircleColor="@color/white"
+        app:sv_selectedCircleRadius="12dp"
+        app:sv_selectedStepNumberColor="@color/bluePrimary"
+        app:sv_selectedTextColor="@color/bluePrimary"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepNumberTextSize="16sp"
+        app:sv_stepPadding="4dp"
+        app:sv_stepViewStyle="@style/StepView" />
+
+    <com.poovam.pinedittextfield.CirclePinField
+        android:id="@+id/input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSelectHandle="@drawable/text_handle"
+        android:textSize="16sp"
+        app:circleRadius="15dp"
+        app:fieldBgColor="@color/bluePrimary"
+        app:fillerColor="#ddd"
+        app:fillerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/step"
+        app:noOfFields="4" />
+
+    <com.lgi.applock.layouts.PinInputKeyboard
+        android:id="@+id/loutPinInputKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_field" />
+
+</com.lgi.applock.layouts.SafeConstraintLayout>

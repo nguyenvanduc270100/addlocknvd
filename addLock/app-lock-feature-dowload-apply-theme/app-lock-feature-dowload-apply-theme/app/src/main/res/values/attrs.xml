@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="padding_status_bar" type="bool" />
+
+    <!-- PinInputKeyboardKeyButton -->
+    <attr name="pin_input_button_text" type="string" />
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LockAppActivity"
+    android:background="@drawable/bg_lock_app">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/title_app"
+        style="@style/text_title_name_app"
+        android:layout_marginStart="@dimen/_16sdp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icLock"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_unlocked"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_16sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleLockNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icLock"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/tab_lock_create_new_pin"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleLockDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icLock"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:text="@string/tab_lock_set_pattern"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescribeLockDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleLockDraw"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/tab_lock_set_pattern"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="#D6D6D6" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescribeLockDraw"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStep1"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="1"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/border_text_circle_selected"
+            android:gravity="center" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_1sdp"
+            app:layout_constraintStart_toEndOf="@id/tvStep1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStep2"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/line2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="2"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/border_text_circle"
+            android:gravity="center" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.eftimoff.patternview.PatternView
+        xmlns:patternview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/patternView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        patternview:circleSize="50dp"
+        patternview:pathColor="@color/primary_dark_material_light"
+        patternview:circleColor="@color/white"
+        patternview:dotColor="@color/white"
+        patternview:gridRows="4"
+        patternview:gridColumns="4"
+        patternview:layout_constraintBottom_toBottomOf="parent"
+        patternview:layout_constraintStart_toStartOf="parent"
+        patternview:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_80sdp"
+        android:visibility="gone"/>
+
+    <com.itsxtt.patternlock.PatternLockView
+        android:id="@+id/patternLockView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="W,1:2"
+        android:layout_marginBottom="@dimen/_80sdp"
+        app:plv_regularLineColor="@color/white"
+        app:plv_selectedDotColor="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

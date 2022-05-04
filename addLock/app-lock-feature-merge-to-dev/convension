@@ -1,0 +1,10 @@
+CODING
+- Comment đầu file: tên file (class), người viết, ngày viết
+- Comment đầu hàm: chức năng hàm
+- Trong một hàm mà có đoạn code nào xử lý phức tạp, khó hiểu thì cũng có thể comment
+- Một hàm dài không quá 30 lines code
+- Trong một hàm không có for lồng nhau
+- Member property của class thì thêm tiền tố 'm', ex: mInstance
+- Function theo kiểu android: chữ bắt đầu không viết hoa, ex: fun getUserName()
+* FIX BUG
+- Comment: tên issue, ngày fix, người fix trước và sau đoạn sửa

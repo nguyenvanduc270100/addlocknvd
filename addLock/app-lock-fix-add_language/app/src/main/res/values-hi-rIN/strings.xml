@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppLocker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete">Excluir</string>
+
+    <string name="lock">APP LOCK</string>
+    <string name="create_new_pin">Create new PIN</string>
+    <string name="enter_pin_code_again">Masukkan kode pin lagi untuk mengonfirmasi</string>
+    <string name="wrong_pin_code">PIN do not match, please enter again</string>
+    <string name="title_home">Pagina inicial</string>
+    <string name="title_notifications">Contexto</string>
+    <string name="title_dashboard_tool">Tools</string>
+    <string name="title_lock_app">App Lock</string>
+    <string name="tab_home_all">Semua</string>
+    <string name="tab_home_favorited">Favorit</string>
+    <string name="tab_home_downloaded">Terpasang</string>
+    <string name="tab_home_system">Sistem</string>
+    <string name="all_media">Media</string>
+    <string name="chose_image">Escolher Foto</string>
+    <string name="done">Done</string>
+
+    <string name="background_image">Background</string>
+
+
+    <string name="main_activity_home_tab">Rumah</string>
+    <string name="main_activity_theme_tab">Tema</string>
+    <string name="main_activity_settings_tab">Pengaturan</string>
+    <string name="title_tool">Tool</string>
+    <string name="title_setting">Pengaturan</string>
+    <string name="enter_pin">Enter Pin</string>
+    <string name="creat_pattern">Creat a Pattern</string>
+    <string name="pattern_wrong">Pattern Wrong</string>
+    <string name="create_pin">Creat a Pin</string>
+    <string name="pin_wrong">Pin Wrong</string>
+    <string name="draw_pattern">hello</string>
+    <string name="protect">Protect your apps</string>
+
+    <string name="per_draw">Cho phép vẽ trên ứng dụng khác</string>
+    <string name="per_use">Cho phép truy cập dữ liệu sử dụng</string>
+    <string name="app_for">AppLock cho Chính sách bảo đảm</string>
+    <string name="you_need">Bạn cần cung cấp một số quyền cho</string>
+    <string name="again">( Again )</string>
+
+    <string name="tab_lock_create_new_pin">Create New Pin</string>
+    <string name="tab_lock_set_pattern">Atur Pola</string>
+    <string name="tab_lock_draw_unlock">Gambar pola buka kunci</string>
+    <string name="tab_lock_draw_unlock_confirm">Draw pattern again to confirm</string>
+    <string name="search">Search</string>
+    <string name="fast_options">Fast Options</string>
+    <string name="unlock_all">Unlock All</string>
+    <string name="is_protecting">Is Protecting Your Privacy</string>
+
+    <!--    Setting-->
+    <string name="nav_language">Language</string>
+    <string name="nav_setting">Pengaturan</string>
+    <string name="setting_header">Pengaturan</string>
+    <string name="setting_choose_language">Pilih bahasamu</string>
+
+
+    <string name="share_us">우리를 공유</string>
+    <string name="cancel">취소</string>
+    <string name="share">공유하다</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppLocker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string name="lock">Lock</string>
+    <string name="create_new_pin">Create new pIN</string>
+    <string name="enter_pin_code_again">Enter pin code again to confirm</string>
+</resources>

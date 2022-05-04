@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">AppLocker</string>
+    <string name="title_app">App Lock</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_tool">Tool</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_notifications">Setting</string>
+    <string name="title_dashboard_tool">Tools</string>
+    <string name="title_lock_app">App Lock</string>
+    <string name="tab_home_all">All</string>
+    <string name="tab_home_favorited">Favorited</string>
+    <string name="tab_home_downloaded">Downloaded</string>
+    <string name="tab_home_system">System</string>
+    <string name="enter_pin">Enter Pin</string>
+    <string name="creat_pattern">Creat a Pattern</string>
+    <string name="pattern_wrong">Pattern Wrong</string>
+    <string name="create_pin">Creat a Pin</string>
+    <string name="pin_wrong">Pin Wrong</string>
+    <string name="draw_pattern">hello</string>
+    <string name="protect">Protect your apps</string>
+    <string name="per_use">Permit accessing usage starts</string>
+    <string name="per_draw">Permit accessing usage starts</string>
+    <string name="app_for">AppLock for Sercurity Policies</string>
+    <string name="you_need">You need to give some permissions to the</string>
+    <string name="again">( Again )</string>
+
+    <string name="tab_lock_create_new_pin">Create New Pin</string>
+    <string name="tab_lock_set_pattern">Set Pattern</string>
+    <string name="tab_lock_draw_unlock">Draw an unlock pattern</string>
+    <string name="tab_lock_draw_unlock_confirm">Draw pattern again to confirm</string>
+    <string name="search">Search</string>
+    <string name="fast_options">Fast Options</string>
+    <string name="unlock_all">Unlock All</string>
+</resources>

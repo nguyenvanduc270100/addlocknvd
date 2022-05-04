@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lgi.applock.layouts.SafeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context="com.lgi.applock.activities.ChangeColorActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_back_theme" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:layout_toRightOf="@id/img_back"
+                android:fontFamily="@font/sans_regular"
+                android:text="Keyboard Color"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_tick_theme" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border_top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_tool_bar">
+
+        <com.poovam.pinedittextfield.CirclePinField
+            android:id="@+id/input_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="60dp"
+            android:background="#0003DAC5"
+            android:textSize="16sp"
+            app:circleRadius="7dp"
+            app:distanceInBetween="16dp"
+            app:fieldBgColor="#3A7BD5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineThickness="0dp"
+            app:noOfFields="4" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_list_color"
+            android:gravity="center"
+            android:padding="8dp"
+            android:weightSum="8"
+            app:layout_constraintTop_toBottomOf="@id/input_field">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/layout_parent_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:backgroundColor="@color/color_list_1"
+                    app:cornerAll="15dp"
+                    app:strokeLineColor="#000000"
+                    app:strokeLineWidth="0.8dp">
+
+                    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                        android:id="@+id/layout_child_1"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:backgroundColor="@color/color_list_1"
+                        app:cornerAll="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/layout_parent_2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:backgroundColor="@color/color_list_2"
+                    app:cornerAll="15dp"
+                    app:strokeLineColor="@color/color_list_2"
+                    app:strokeLineWidth="1dp">
+
+                    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                        android:id="@+id/layout_child_2"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:backgroundColor="@color/color_list_2"
+                        app:cornerAll="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/layout_parent_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:backgroundColor="@color/color_list_3"
+                    app:cornerAll="15dp"
+                    app:strokeLineColor="@color/color_list_3"
+                    app:strokeLineWidth="1dp">
+
+                    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                        android:id="@+id/layout_child_3"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:backgroundColor="@color/color_list_3"
+                        app:cornerAll="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/layout_parent_4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:backgroundColor="@color/color_list_4"
+                    app:cornerAll="15dp"
+                    app:strokeLineColor="@color/color_list_4"
+                    app:strokeLineWidth="1dp">
+
+                    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                        android:id="@+id/layout_child_4"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:backgroundColor="@color/color_list_4"
+                        app:cornerAll="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/layout_parent_5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:backgroundColor="@color/color_list_5"
+                    app:cornerAll="15dp"
+                    app:strokeLineColor="@color/color_list_5"
+                    app:strokeLineWidth="1dp">
+
+                    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                        android:id="@+id/layout_child_5"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:backgroundColor="@color/color_list_5"
+                        app:cornerAll="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/layout_parent_6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:backgroundColor="@color/color_list_6"
+                    app:cornerAll="15dp"
+                    app:strokeLineColor="@color/color_list_6"
+                    app:strokeLineWidth="1dp">
+
+                    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                        android:id="@+id/layout_child_6"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:backgroundColor="@color/color_list_6"
+                        app:cornerAll="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/layout_parent_7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:backgroundColor="@color/color_list_7"
+                    app:cornerAll="15dp"
+                    app:strokeLineColor="@color/color_list_7"
+                    app:strokeLineWidth="1dp">
+
+                    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                        android:id="@+id/layout_child_7"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:backgroundColor="@color/color_list_7"
+                        app:cornerAll="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/layout_parent_8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:backgroundColor="@color/color_list_8"
+                    app:cornerAll="15dp"
+                    app:strokeLineColor="@color/color_list_8"
+                    app:strokeLineWidth="1dp">
+
+                    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                        android:id="@+id/layout_child_8"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        app:backgroundColor="@color/color_list_8"
+                        app:cornerAll="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.lgi.applock.layouts.PinInputKeyboard
+            android:id="@+id/loutPinInputKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#0003DAC5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.lgi.applock.layouts.SafeConstraintLayout>

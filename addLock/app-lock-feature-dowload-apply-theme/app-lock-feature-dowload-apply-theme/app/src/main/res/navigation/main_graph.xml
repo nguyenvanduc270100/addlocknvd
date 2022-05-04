@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_settings">
+
+<!--        android:name="com.lgi.applock.fragments.HomeFragment"-->
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_home"-->
+<!--        android:name="com.lgi.applock.fragments.HomeFragment"-->
+<!--        android:label="@string/title_home"-->
+<!--        tools:layout="@layout/fragment_home">-->
+
+<!--        <action-->
+<!--            android:id="@+id/action_home_to_lockAppFragment"-->
+<!--            app:destination="@id/navigation_lock_app"-->
+<!--            app:popUpTo="@+id/navigation_lock_app"/>-->
+
+<!--    </fragment>-->
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_tools"-->
+<!--        android:name="com.lgi.applock.fragments.ThemeFragment"-->
+<!--        android:label="@string/title_tool"-->
+<!--        tools:layout="@layout/fragment_tool">-->
+
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_lock_app"-->
+<!--        android:name="com.lgi.applock.fragments.LockAppFragment"-->
+<!--        android:label="@string/title_lock_app"-->
+<!--        tools:layout="@layout/fragment_lock_app">-->
+
+<!--    </fragment>-->
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.lgi.applock.fragments.SettingFragment"
+        android:label="@string/nav_setting"
+        tools:layout="@layout/fragment_setting">
+
+        <action
+            android:id="@+id/action_setting_to_languageFragment"
+            app:destination="@+id/navigationLanguage"
+            app:popUpTo="@+id/navigationLanguage">
+
+        </action>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationLanguage"
+        android:name="com.lgi.applock.fragments.LanguageFragment"
+        android:label="@string/nav_language"
+        tools:layout="@layout/fragment_language">
+
+        <action
+            android:id="@+id/action_language_to_settingFragment"
+            app:destination="@+id/navigation_settings"
+            app:popUpTo="@+id/navigation_settings">
+
+        </action>
+
+    </fragment>
+
+</navigation>

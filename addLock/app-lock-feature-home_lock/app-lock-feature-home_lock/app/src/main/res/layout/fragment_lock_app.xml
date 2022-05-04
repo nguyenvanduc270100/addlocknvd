@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.lock_app.LockAppFragment"
+    android:background="@drawable/bg_lock_app">
+
+
+    <com.eftimoff.patternview.PatternView
+        xmlns:patternview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/patternView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        patternview:circleSize="50dp"
+        patternview:pathColor="@color/primary_dark_material_light"
+        patternview:circleColor="@color/white"
+        patternview:dotColor="@color/white"
+        patternview:gridRows="4"
+        patternview:gridColumns="4"
+        patternview:layout_constraintBottom_toBottomOf="parent"
+        patternview:layout_constraintStart_toStartOf="parent"
+        patternview:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_80sdp"
+        android:visibility="gone"/>
+
+    <com.itsxtt.patternlock.PatternLockView
+        android:id="@+id/patternLockView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="W,2:3"
+        android:layout_marginBottom="@dimen/_80sdp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

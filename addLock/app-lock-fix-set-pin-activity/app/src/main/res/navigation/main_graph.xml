@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+<!--        android:name="com.lgi.applock.fragments.HomeFragment"-->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.lgi.applock.fragments.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_lockAppFragment"
+            app:destination="@id/navigation_lock_app"
+            app:popUpTo="@+id/navigation_lock_app"/>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_tools"
+        android:name="com.lgi.applock.fragments.home.ToolFragment"
+        android:label="@string/title_tool"
+        tools:layout="@layout/fragment_tool">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.lgi.applock.fragments.home.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_lock_app"
+        android:name="com.lgi.applock.fragments.LockAppFragment"
+        android:label="@string/title_lock_app"
+        tools:layout="@layout/fragment_lock_app">
+
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigationRamUsage"-->
+<!--        android:name="com.example.cleanphone.ui.cleanram.presentation.CleanRamFragment"-->
+<!--        tools:layout="@layout/fragment_usage_ram" />-->
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_settings"-->
+<!--        android:name="com.example.cleanphone.ui.setting.SettingFragment"-->
+<!--        android:label="@string/title_notifications"-->
+<!--        tools:layout="@layout/fragment_setting" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigationBatterySaver"-->
+<!--        android:label="@string/battery_save"-->
+<!--        android:name="com.example.cleanphone.ui.battery.presentation.BatterySaverFragment"-->
+<!--        tools:layout="@layout/fragment_battery_saver">-->
+<!--        <action-->
+<!--            android:id="@+id/action_batteryFragment_to_homeFragmnet"-->
+<!--            app:destination="@id/navigation_home" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_batteryFragment_to_toolFragment"-->
+<!--            app:destination="@id/navigation_tools" />-->
+<!--    </fragment>-->
+</navigation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bienlongtuan.applocker.layouts.SafeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/chose_image"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back_left"/>
+
+    <RelativeLayout
+        android:id="@+id/rlt_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/border_top">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/album_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</com.bienlongtuan.applocker.layouts.SafeConstraintLayout>

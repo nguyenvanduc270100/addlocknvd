@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/_30sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:background="@color/colorPrimary"
+    android:id="@+id/layoutToolbarHome">
+
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_back_left" >
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/setting_choose_language"
+        android:layout_marginStart="48dp"
+        android:textSize="18dp"
+        android:fontFamily="Google Sans"
+        android:lineHeight="24dp"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnLock"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="19.25dp"
+        app:srcCompat="@drawable/ic_done"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

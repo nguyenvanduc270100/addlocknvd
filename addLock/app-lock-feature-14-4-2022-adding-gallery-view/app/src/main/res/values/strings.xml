@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppLocker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home_title">APP LOCK</string>
+    
+    <string name="home_search">Search</string>
+    <string name="home_security">Security</string>
+
+    <string name="photo">Photo</string>
+    <string name="albums">Albums</string>
+    <string name="chose_photo">Choose 1 Photo</string>
+
+    <string name="done">Done</string>
+</resources>

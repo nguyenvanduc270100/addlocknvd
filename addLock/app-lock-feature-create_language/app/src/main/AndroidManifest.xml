@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lgi.applock">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.lgi.applock.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppLocker"
+        >
+
+        <service
+            android:name="com.lgi.applock.services.AppLockerService"/>
+
+
+        <activity
+            android:name="com.lgi.applock.activities.PreviewBackgroundActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.lgi.applock.activities.ChooseBackgroundThemActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.lgi.applock.activities.SetPinActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.lgi.applock.activities.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.lgi.applock.activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver
+            android:name="com.lgi.applock.services.BroadCastBoot"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter
+                android:enabled="true"
+                android:exported="true">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+        </receiver>
+
+        <activity
+            android:name="com.lgi.applock.activities.MainActivity2"
+            android:exported="true" />
+
+        <activity
+            android:name="com.lgi.applock.activities.LockAppActivity"
+            android:exported="true" />
+
+
+        <activity
+            android:name="com.lgi.applock.activities.ChangeColorActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

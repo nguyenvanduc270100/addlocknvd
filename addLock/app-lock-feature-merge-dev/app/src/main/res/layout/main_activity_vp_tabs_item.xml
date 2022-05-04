@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+        android:id="@+id/loutMainWrapper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:cornerLeftSide="16dp"
+        app:cornerRightSide="16dp"
+        app:backgroundColor="@color/home_tab_bar_wrapper_active"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imvTabIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                tools:tint="@color/home_tab_bar_icon_active"
+                tools:src="@drawable/ic_tab_home" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/home_tab_bar_title"
+                android:textSize="14dp"
+                tools:text="Lmaoo"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
